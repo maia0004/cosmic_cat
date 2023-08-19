@@ -1,0 +1,37 @@
+footer {
+  font-family: Reem Kufi Ink;
+}
+#nav {
+  border:3px solid #181d29;
+}
+.nav-pills .pill-1 {
+  background-color: #181d29;
+  border: 3px solid white;
+}
+#nav2 {
+  border:3px solid #e0e7a9;
+}
+.nav-pills .pill-2 {
+  background-color: #e0e7a9;
+  border: 5px solid white;
+}
+#nav3 {
+    border:3px solid #ccaed3
+  }
+.nav-pills .pill-3 {
+  background-color: #ccaed3;
+  border: 3px solid white;
+}
+#nav4 {
+  border:3px solid #82cae3;
+}
+.nav-pills .pill-4 
+{
+background-color: #82cae3;
+border: 3px solid white;
+}
+li {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Hachi Maru Pop;
+}
