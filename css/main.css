@@ -1,7 +1,62 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*My CSS*/
+
+.nav-menu {
+  display: none;
+}
+
+/*BURGER MENU START*/
 :root{
   --white: #f9f9f9;
-  --black: #181d29;
-  --gray: #85888C;
+  --dark: #181d29;
 } 
 /* variables*/
 
@@ -13,19 +68,18 @@
 }
 /* Header */
 .header{
-  background-color: var(--black);
-  box-shadow: 1px 1px 5px 0px var(--gray);
+  background-color: var(--dark);
   position: sticky;
   top: 0;
   width: 100%;
   border: 3px solid white;
 }
 /* Nav menu */
-.nav{
+.nav-burger{
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: var(--black);
+  background-color: var(--dark);
   overflow: hidden;
   max-height: 0;
   transition: max-height .5s ease-out;
@@ -35,10 +89,6 @@
   padding: 30px;
   color: var(--white);
 }
-.menu a:hover{
-  background-color: var(--gray);
-}
-
 /* Menu Icon */
 .hamb{
   cursor: pointer;
@@ -89,3 +139,13 @@
   transform: rotate(45deg);
   top:0;
 }
+/*BURGUER MENU END*/
+
+@media screen and (min-width: 576px) {
+  .header {
+    display: none;
+  }
+  .nav-menu {
+    display:block;
+  }
+  }
