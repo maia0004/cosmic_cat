@@ -74,7 +74,7 @@ table {
 }
 
 /* Header*/
-{
+.header {
   background-color: var(--dark);
   position: sticky;
   top: 0;
@@ -111,13 +111,7 @@ table {
   position: relative;
   width: 24px;
 } 
-.hamb-line5 {
-  background: var(--dark);
-  display: block;
-  height: 2px;
-  position: relative;
-  width: 24px;
-} 
+
 /* Style span tag */
 .hamb-line::before,
 .hamb-line::after{
@@ -129,28 +123,14 @@ table {
   transition: all .2s ease-out;
   width: 100%;
 }
-.hamb-line5::before,
-.hamb-line5::after{
-  background: var(--dark);
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
+
 .hamb-line::before{
   top: 5px;
 }
 .hamb-line::after{
   top: -5px;
 }
-.hamb-line5::before{
-  top: 5px;
-}
-.hamb-line5::after{
-  top: -5px;
-}
+
 .side-menu {
   display: none;
 } 
