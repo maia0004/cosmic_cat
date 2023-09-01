@@ -52,6 +52,12 @@ table {
 .nav-menu {
   display: none;
 }
+.logo_eye {
+  display: none;
+}
+.logo_cc {
+  display: none;
+}
 
 /*BURGER MENU START*/
 :root{
@@ -66,13 +72,14 @@ table {
   padding: 0;
   box-sizing: border-box;
 }
-/* Header */
-.header{
+
+/* Header*/
+{
   background-color: var(--dark);
   position: sticky;
   top: 0;
   width: 100%;
-  border: 3px solid white;
+  border: 3px solid #181d29;
 }
 /* Nav menu */
 .nav-burger{
@@ -84,6 +91,7 @@ table {
   max-height: 0;
   transition: max-height .5s ease-out;
 }
+
 .menu a{
   display: block;
   padding: 30px;
@@ -103,6 +111,13 @@ table {
   position: relative;
   width: 24px;
 } 
+.hamb-line5 {
+  background: var(--dark);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+} 
 /* Style span tag */
 .hamb-line::before,
 .hamb-line::after{
@@ -114,10 +129,26 @@ table {
   transition: all .2s ease-out;
   width: 100%;
 }
+.hamb-line5::before,
+.hamb-line5::after{
+  background: var(--dark);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
 .hamb-line::before{
   top: 5px;
 }
 .hamb-line::after{
+  top: -5px;
+}
+.hamb-line5::before{
+  top: 5px;
+}
+.hamb-line5::after{
   top: -5px;
 }
 .side-menu {
@@ -147,5 +178,11 @@ table {
   }
   .nav-menu {
     display:block;
+  }
+  .logo_eye {
+    display: block;
+  }
+  .logo_cc {
+    display: block;
   }
   }
