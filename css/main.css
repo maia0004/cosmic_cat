@@ -48,7 +48,6 @@ table {
 }
 
 /*My CSS*/
-
 .nav-menu {
   display: none;
 }
@@ -58,6 +57,12 @@ table {
 .logo_cc {
   display: none;
 }
+.purpleCatAndWhite {
+  display: none
+}
+.eyes {
+  display: none;
+}
 
 /*BURGER MENU START*/
 :root{
@@ -65,38 +70,30 @@ table {
   --dark: #181d29;
 } 
 /* variables*/
-
 /* Reset */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Header
+/* Header*/
 .header{
-  background-color: var(--dark);
   position: sticky;
   top: 0;
   width: 100%;
-  border: 3px solid #181d29;
 }
-*/
 /* Nav menu */
 .nav-burger{
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: var(--dark);
   overflow: hidden;
   max-height: 0;
   transition: max-height .5s ease-out;
 }
-
 .menu a{
   display: block;
   padding: 30px;
-  color: var(--white);
 }
 /* Menu Icon */
 .hamb{
@@ -171,6 +168,17 @@ table {
   transform: rotate(45deg);
   top:0;
 }
+.side-menu:checked ~ .hamb .hamb-line1 {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line1::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line1::after {
+  transform: rotate(45deg);
+  top:0;
+}
 /*BURGUER MENU END*/
 
 @media screen and (min-width: 576px) {
@@ -184,6 +192,18 @@ table {
     display: block;
   }
   .logo_cc {
+    display: block;
+  }
+  .purpleCat {
+    display: none;
+  }
+  .purpleCatAndWhite {
+    display: block;
+  }
+  .eye {
+    display: none;
+  }
+  .eyes {
     display: block;
   }
   }
