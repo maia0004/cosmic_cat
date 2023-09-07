@@ -63,7 +63,21 @@ table {
 .eyes {
   display: none;
 }
-
+.dark2 {
+  display: none;
+}
+.yellow2 {
+  display: none;
+}
+.purple2 {
+  display: none;
+}
+.blue2 {
+  display: none;
+}
+.white2 {
+  display: none;
+}
 /*BURGER MENU START*/
 :root{
   --white: #f9f9f9;
@@ -209,4 +223,34 @@ table {
   h1 {
     display: none;
   }
+  .dark {
+    display: none;
   }
+  .dark2 {
+    display: block;
+  }
+  .yellow {
+    display: none;
+  }
+  .yellow2 {
+    display: block;
+  }
+  .purple {
+    display: none;
+  }
+  .purple2 {
+    display: block;
+  }
+  .blue {
+    display: none;
+  }
+  .blue2 {
+    display: block;
+  }
+  .white {
+    display: none;
+  }
+  .white2 {
+    display: block;
+  }
+}
