@@ -78,6 +78,9 @@ table {
 .white2 {
   display: none;
 }
+.layout {
+  display: none;
+}
 .box {
     animation-name: changecolor;
     background-color: #b7a5cd;
@@ -278,5 +281,19 @@ table {
   }
   .white2 {
     display: block;
+  }
+  .layout{
+    display: none;
+  }
+}
+@media screen and (min-width: 960px) {
+  .layout { 
+    display: block;
+  }
+  .logo_cc {
+    display: none;
+  }
+  .row {
+    display: none;
   }
 }
