@@ -78,6 +78,32 @@ table {
 .white2 {
   display: none;
 }
+.box {
+    animation-name: changecolor;
+    background-color: #b7a5cd;
+    animation-duration:2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+  }
+  @keyframes changecolor{
+    50% {background-color: #b7a5cd;}
+    50% {background-color: #82cae3;}
+    }
+    .box:hover {
+      animation-name: growandshrink;
+      animation-duration:2.2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      cursor: pointer;
+    }
+    @keyframes growandshrink {
+      50% {background-color: #b7a5cd;
+        transform: scale(1, 0.5);}
+      50% {background-color: #82cae3;
+          transform: scale(1, 1.5);}
+      }
+
 /*BURGER MENU START*/
 :root{
   --white: #f9f9f9;
